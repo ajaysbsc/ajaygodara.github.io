@@ -12,9 +12,12 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<script>
-		  function showPopup() {
+		  function showWorkExperiencePopup() {
 		    var popup = document.getElementById("work-experience-popup");
-			var popup = document.getElementById("education-popup");
+		    popup.style.display = "block";
+		  }
+		  function showEducationPopup() {
+		    var popup = document.getElementById("education-popup");
 		    popup.style.display = "block";
 		  }
 		</script>
@@ -55,15 +58,16 @@
 								 <li>Punjab Remote Sensing Center</li>
 							</p>
 							<ul class="actions stacked">
-								<li><a href="#" onclick="showPopup(); return false;" class="button big wide smooth-scroll-middle">Work Experience</a>
+								<li><a href="#" onclick="showWorkExperiencePopup(); return false;" class="button big wide smooth-scroll-middle">Work Experience</a>
 							</ul>
 						</div>
+						
 
 						<!-- work experience -->
 						<div id="work-experience-popup" style="display: none; position: fixed; z-index: 1; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.4);">
 						   <div style="background-color: #fefefe; margin: 15% auto; padding: 20px; width: 80%;">
-						     <span style="float: right; font-size: 16px; font-weight: bold; cursor: pointer;" onclick="document.getElementById('work-experience-popup').style.display = 'none';">&times;</span>
-						     <h1>Work Experience/Fieldwork</h1>
+						     <span style="float: right; font-size: 12px; font-weight: bold; cursor: pointer;" onclick="document.getElementById('work-experience-popup').style.display = 'none';">&times;</span>
+						     <h1>Work Experience</h1>
 						    <ul>
 						    <li>
 						      <p> Junior Research Fellow  - G.B. Pant National Institute of Himalayan Environment and Sustainable Development, Almora, Uttarakhand, India (May 2017 - Jan 2018)</p>
@@ -105,14 +109,14 @@
 								 <li>BA (Hons.) Geography: University of Delhi</li>
 							</p>
 							<ul class="actions stacked">
-								<li><a href="#" onclick="showPopup(); return false;" class="button big wide smooth-scroll-middle">Education</a>
+								<li><a href="#" onclick="showEducationPopup(); return false;" class="button big wide smooth-scroll-middle">Education</a>
 							</ul>
 						</div>
-
+						
 						<!-- education -->
 						<div id="education-popup" style="display: none; position: fixed; z-index: 1; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.4);">
 						   <div style="background-color: #fefefe; margin: 15% auto; padding: 20px; width: 80%;">
-						     <span style="float: right; font-size: 16px; font-weight: bold; cursor: pointer;" onclick="document.getElementById('education-popup').style.display = 'none';">&times;</span>
+						     <span style="float: right; font-size: 12px; font-weight: bold; cursor: pointer;" onclick="document.getElementById('education-popup').style.display = 'none';">&times;</span>
 						     <h1>Education</h1>
 						     <ul>
 						       <li>
