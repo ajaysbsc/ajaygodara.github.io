@@ -11,6 +11,13 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script>
+		  function showPopup() {
+		    var popup = document.getElementById("work-experience-popup");
+			var popup = document.getElementById("education-popup");
+		    popup.style.display = "block";
+		  }
+		</script>
 	</head>
 	<body class="is-preload">
 
@@ -18,13 +25,20 @@
 			<div id="wrapper" class="divided">
 
 				<!-- One -->
-					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+					<section class="banner style1 orient-right content-align-Center image-position-Center fullscreen onload-image-fade-up onload-content-fade-left">
 						<div class="content">
 							<h1>Ajay Godara</h1>
 							<p class="major">I am currently pursuing PhD under the supervision of Prof. RAAJ Ramsanakaran at Indian Institute of Technology, Bombay (IITB) as part of <a href="https://www.civil.iitb.ac.in/~ramsankaran/current-members.html">HRSA Group</a>.</p>
-							<ul class="actions stacked">
-								<li><a href="#first" class="button big wide smooth-scroll-middle">More Details</a></li>
-							</ul>
+							<div class="d-flex justify-content-Center">
+							  <ul class="actions d-flex flex-wrap">
+							    <li class="mx-1"><a href="#Work Profile" class="text-white button big wide smooth-scroll-middle">Work Profile</a></li>
+							    <li class="mx-1"><a href="#Eduction" class="text-white button big wide smooth-scroll-middle">Education</a></li>
+							  </ul>
+							  <ul class="actions d-flex flex-wrap">
+							    <li class="mx-1"><a href="#Travel Diary" class="text-white button big wide smooth-scroll-middle">Travel Diary</a></li>
+								<li class="mx-1"><a href="#Project" class="text-white button big wide smooth-scroll-middle">Projects</a></li>
+							  </ul>
+							</div>
 						</div>
 						<div class="image">
 							<img src="images/banner.jpg" alt="" />
@@ -32,27 +46,92 @@
 					</section>
 
 				<!-- Two -->
-					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
+					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="Work Profile">
 						<div class="content">
 							<h2>Work profile</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum dolor sit amet.</p>
+							<p>
+							<ul>
+								 <li>GB Pant National Institute of Himalayan Environemnt and Sustainble Development</li>
+								 <li>Punjab Remote Sensing Center</li>
+							</p>
 							<ul class="actions stacked">
-								<li><a href="#" class="button">Learn More</a></li>
+								<li><a href="#" onclick="showPopup(); return false;" class="button big wide smooth-scroll-middle">Work Experience</a>
 							</ul>
+						</div>
+
+						<!-- work experience -->
+						<div id="work-experience-popup" style="display: none; position: fixed; z-index: 1; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.4);">
+						   <div style="background-color: #fefefe; margin: 15% auto; padding: 20px; width: 80%;">
+						     <span style="float: right; font-size: 16px; font-weight: bold; cursor: pointer;" onclick="document.getElementById('work-experience-popup').style.display = 'none';">&times;</span>
+						     <h1>Work Experience/Fieldwork</h1>
+						    <ul>
+						    <li>
+						      <p> Junior Research Fellow  - G.B. Pant National Institute of Himalayan Environment and Sustainable Development, Almora, Uttarakhand, India (May 2017 - Jan 2018)</p>
+						      <p>Responsibility</p>
+						      <ul>
+						        <li>Collection of field data using Differential Global Positioning System to calculate glacier velocity estimation.</li>
+						        <li>Glacier discharge measurement using hydrological methods.</li>
+						        <li>Done field work to Dhauliganga valley, Uttarakhand and Tawang valley, Arunachal Pradesh, Indian Himalayan Region</li>
+						      </ul>
+						    </li>
+						    <li>
+						      <p>Junior Research Fellow (Environment) - Punjab Remote Sensing Centre, Ludhiana, Punjab, India (Jan - July 2018)</p>
+						      <p>Responsibility</p>
+						      <ul>
+						        <li>Development of project structure for air quality monitoring over Punjab.</li>
+						        <li>Different satellite data processing for air quality product such as MODIS, OMI, CALIPSO etc.</li>
+						        <li>Mapping of major industry and brick kilns and pollutant source mapping.</li>
+						      </ul>
+						    </li>
+						  </ul>
+						  </div>
 						</div>
 						<div class="image">
 							<img src="images/spotlight01.jpg" alt="" />
 						</div>
+
 					</section>
 
+						
+
 				<!-- Three -->
-					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" id="Eduction">
 						<div class="content">
 							<h2>Education</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum dolor sit amet.</p>
+							<p>
+							<ul>
+								 <li>M.tech. (Remote Sensing): Birla Institute of Technology, Ranchi</li>
+								 <li>Master in Remote Sensing : Panjab University, Chandigarh</li>
+								 <li>BA (Hons.) Geography: University of Delhi</li>
+							</p>
 							<ul class="actions stacked">
-								<li><a href="#" class="button">Learn More</a></li>
+								<li><a href="#" onclick="showPopup(); return false;" class="button big wide smooth-scroll-middle">Education</a>
 							</ul>
+						</div>
+
+						<!-- education -->
+						<div id="education-popup" style="display: none; position: fixed; z-index: 1; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.4);">
+						   <div style="background-color: #fefefe; margin: 15% auto; padding: 20px; width: 80%;">
+						     <span style="float: right; font-size: 16px; font-weight: bold; cursor: pointer;" onclick="document.getElementById('education-popup').style.display = 'none';">&times;</span>
+						     <h1>Education</h1>
+						     <ul>
+						       <li>
+						         <p>PhD in Glacier Research - Department of Civil Engineering, Indian Institute of Technology, Bombay</p>
+						       </li>
+						       <li>
+						         <p>M.Tech in Remote Sensing - Birla Institute and Technology, Mesra, Ranchi, India. </p>
+						         <p>Principles of Remote Sensing and Digital Satellite Image Processing, Remote Sensing in Hydrology & Water Resources, Aerial and Satellite Photogrammetry & Image Interpretation, Advanced Remote Sensing and Geospatial Modelling, Statistics and Research Methods in Geospatial Domain. Percentage: 8.83 CGPA</p>
+						       </li>
+						       <li>
+						         <p>Master of Remote Sensing and GIS - Punjab University, Chandigarh, India.</p>
+						         <p> Fundamentals of Computers Programming Cartography, Analysis, Image Processing, Fundamentals of Global Positioning System (GPS), Remote sensing and Geographic Information System in Geosciences. Percentage: First Division, 72.25%.</p>
+						       </li>
+						       <li>
+						         <p>Bachelors of Arts in Geography, B.A. (H.) - Shaheed Bhagat Singh College, University of Delhi, India.</p>
+						         <p>Analytical Physical Geography, Oceanography, Thematic Cartography (Practical), Environmental Geography, Remote Sensing, Spatial Dimensions of Development, Statistical Methods in Geography, Field Techniques in Geography. Percentage: First Division, 61.07%.</p>
+						       </li>
+						     </ul>
+						   </div>
 						</div>
 						<div class="image">
 							<img src="images/spotlight02.jpg" alt="" />
@@ -60,12 +139,12 @@
 					</section>
 
 				<!-- Four -->
-					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id = "Travel Diary">
 						<div class="content">
 							<h2>Travel Diary</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum dolor sit amet.</p>
+							<p>This section showcase images from latest travel </p>
 							<ul class="actions stacked">
-								<li><a href="#" class="button">Learn More</a></li>
+								<li><a href="#more images" class="button">Learn More</a></li>
 							</ul>
 						</div>
 						<div class="image">
@@ -74,10 +153,10 @@
 					</section>
 
 				<!-- Five -->
-					<section class="wrapper style1 align-center">
+					<section class="wrapper style1 align-center" id = "more images">
 						<div class="inner">
 							<h2>Travel Diary</h2>
-							<p> These are few photographs of my previous travel or field survey to glaciers.</p>
+							<p> These are few photographs of my latest travels to Himalayan glaciers.</p>
 						</div>
 
 						<!-- Gallery -->
@@ -100,7 +179,7 @@
 									</a>
 									<div class="caption">
 										<h3>Panchinala Glacicer 2021</h3>
-										<p>Field work was carried out as part of IITB for glacier mass balance using UAV and debris thickness study .</p>
+										<p>Field work was carried out as part of IITB for glacier mass balance using UAV and debris thickness study.</p>
 										<ul class="actions fixed">
 											<li><span class="button small">Details</span></li>
 										</ul>
@@ -231,101 +310,46 @@
 					</section>
 
 				<!-- Six -->
-					<section class="wrapper style1 align-center">
-						<div class="inner">
-							<h2>Ipsum sed consequat</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum.</p>
-							<div class="items style1 medium onscroll-fade-in">
-								<section>
-									<span class="icon style2 major fa-gem"></span>
-									<h3>Lorem</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-save"></span>
-									<h3>Ipsum</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-chart-bar"></span>
-									<h3>Dolor</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-wifi"></span>
-									<h3>Amet</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-cog"></span>
-									<h3>Magna</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon style2 major fa-paper-plane"></span>
-									<h3>Tempus</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-desktop"></span>
-									<h3>Aliquam</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-sync-alt"></span>
-									<h3>Elit</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-hashtag"></span>
-									<h3>Morbi</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-bolt"></span>
-									<h3>Turpis</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-envelope"></span>
-									<h3>Ultrices</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-leaf"></span>
-									<h3>Risus</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-							</div>
-						</div>
+					<section class="wrapper style1 align-center", id= "Project">
+					  <div class="inner">
+					    <h2>Projects</h2>
+					    <p>Here are few projects which were related to python, some tutorial related to basic of Remote Sensing and some part time works</p>
+						<p>Please dont mind this section needs to be updated</p>
+					    <div class="items style1 medium onscroll-fade-in">
+					      <section>
+					        <span class="icon style2 major fa-gem"></span>
+					        <h3>Ease of Use</h3>
+					        <p>Our product is designed to be easy to use, with a user-friendly interface that makes it accessible for people of all ages and skill levels.</p>
+					      </section>
+					      <section>
+					        <span class="icon solid style2 major fa-save"></span>
+					        <h3>Efficiency</h3>
+					        <p>Our product is designed to be efficient and save you time, allowing you to accomplish tasks quickly and easily.</p>
+					      </section>
+					      <section>
+					        <span class="icon solid style2 major fa-chart-bar"></span>
+					        <h3>Durability</h3>
+					        <p>Our product is made of high-quality materials and is built to last, ensuring that it will stand the test of time.</p>
+					      </section>
+					      <section>
+					        <span class="icon solid style2 major fa-wifi"></span>
+					        <h3>Connectivity</h3>
+					        <p>Our product offers seamless connectivity, allowing you to connect to other devices and access a wide range of features.</p>
+					      </section>
+					      <section>
+					        <span class="icon solid style2 major fa-cog"></span>
+					        <h3>Customization</h3>
+					        <p>Our product offers a variety of customization options, allowing you to tailor it to your specific needs and preferences.</p>
+					      </section>
+					      <section>
+					        <span class="icon style2 major fa-paper-plane"></span>
+					        <h3>Support</h3>
+					        <p>We offer excellent customer support, ensuring that you have a positive experience with our product.</p>
+					      </section>
+					    </div>
+					  </div>
 					</section>
 
-				<!-- Seven -->
-					<section class="wrapper style1 align-center">
-						<div class="inner medium">
-							<h2>Get in touch</h2>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field half">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" value="" />
-									</div>
-									<div class="field half">
-										<label for="email">Email</label>
-										<input type="email" name="email" id="email" value="" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="6"></textarea>
-									</div>
-								</div>
-								<ul class="actions special">
-									<li><input type="submit" name="submit" id="submit" value="Send Message" /></li>
-								</ul>
-							</form>
-
-						</div>
-					</section>
 
 				<!-- Footer -->
 					<footer class="wrapper style1 align-center">
