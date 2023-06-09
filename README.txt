@@ -1,37 +1,35 @@
-Story by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+==================================================
+                 Ajay Godara's Website
+==================================================
 
+Hello there,
 
-Say hello to Story, a brand new responsive one-pager for HTML5 UP! Inspired by my work
-on Carrd*, Story is built to be extremely modular and tweakable, and as such is entirely
-built on reusable, insanely customizable elements (like "spotlight" and "gallery") that
-can be endlessly duplicated and tweaked into whatever you need to tell your story --
-without, in many cases, touching *any* CSS. Check out index-demo.html for an interactive
-demo, and index.html for the actual template. Enjoy!
+Welcome to my personal website! I am Ajay Godara, currently pursuing my Ph.D. at the Indian Institute of Technology (IIT) Bombay.
 
-Demo images** courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
-you can use for pretty much whatever.
+Here's a brief overview of what you can expect on this website:
 
-PS: Delete index-demo.html and assets/js/demo.js when you're done messing with the demo
-as neither are needed in production :)
+1. ABOUT ME:
+    This page is a detailed introduction to who I am, where I come from, and what led me to my current position at IIT Bombay. It'll tell you about my educational journey, my interests, and my philosophies in life.
 
-(* = my other side project -- carrd.co)
-(** = not included)
+2. RESEARCH:
+    This section showcases my ongoing research and projects in my field of study. It includes published papers, ongoing research, and collaboration projects, along with detailed descriptions and links to my published works.
 
-AJ
-aj@lkn.io | @ajlkn
+3. BLOG:
+    I enjoy sharing my ideas, knowledge, and thoughts on various topics. My blog posts range from academic concepts, tutorials, personal experiences at IIT, and many more.
 
+4. PUBLICATIONS:
+    This is a comprehensive list of all my academic papers, journal articles, conference proceedings, and other scholarly publications. Links to access these publications are provided whenever available.
 
-Credits:
+5. CONTACT ME:
+    Here, you'll find multiple ways to reach out to me. Whether you have an academic query, collaboration idea, or just want to have a chat, feel free to contact me.
 
-	Demo Images:
-		Unsplash (unsplash.com)
+6. FAQ:
+    This section will help answer common questions you may have regarding my work or my field of study.
 
-	Icons:
-		Font Awesome (fontawesome.io)
+If you have any further questions or would like to connect, please don't hesitate to reach out through the "Contact Me" section.
 
-	Other:
-		jQuery (jquery.com)
-		Scrollex (github.com/ajlkn/jquery.scrollex)
-		Responsive Tools (github.com/ajlkn/responsive-tools)
+Enjoy your stay, and I look forward to interacting with you!
+
+Best,
+Ajay Godara
+Ph.D. Student, IIT Bombay
